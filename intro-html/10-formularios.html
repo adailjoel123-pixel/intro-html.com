@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conhecendo a estrutura do elementos de formularios no HTML5,">
+    <title>Sobre fromularios | HTML </title>
+
+
+    </style>
+        body {
+            font-family: sans-serif;
+            background-color: 
+        }
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <h1> Formulário HTML </h1>
+    </header>
+
+    <main>
+        <section>
+            <h2> O que são Formulário no HTML? </h2>
+            <p> Os formulários são uma das parte masi importante do HTMl 
+                pois ajudam a introduzir uma ideia diferente. </p>
+                <p> O usário deixa de apenas consumir contéudo e passa a fonecer
+                    dados para o sistema. </p>
+
+                    <p> Um formulário de froma resumida, é uma área da pagina 
+                        destinada a coleta de informações. </p>
+
+                        <p> Exemplo de uso: </p>
+                        <ul>
+                            <li> login </li>
+                            <li> Cadastro </li>
+                            <li> Contato </li>
+                            <li> Comentarios </li>
+                            <li> Endereço </li>
+                            <li> Inscrições em newsletter </li>
+                        </ul>
+                    </section>
+                    <section>
+
+                    </section>
+                    <h2> Criando um formulario basico  </h2>
+
+                    <from action="">
+
+                        <label for="nome"> Nome </label>
+                        <input type="texte" id="nome" >
+
+                        <button> Enviar </button>
+                     <form>
+
+                        <ul>
+                            <li> &lt; labe &lt; : Representa um rótulo/etiqueta para um campo. È um recurso 
+                                fundametal para a acessebilidade. </li>
+
+                                <li> <strong> for </strong> : Para conectarmos o nosso rótulo (label) ao input,
+                                utilizamos o atributo for. Ele serve para criar a relação com o id do input. </li>
+
+                                <li> <strong> type </strong> : Esse atributo serve para definimos o tipo de input que 
+                                desejamos apresentar para o usario com base no dado queremos
+                            coletar. </li>
+                        </ul>
+                        <section>
+
+                            <section>
+                                <h2> Explorando o formularaio </h2>
+
+                                <form>
+                                    <label for="email"> Email </label>
+                                    <input type="email" id="email" placeholder="adail@exemplo.com" required 
+                                    name="email">
+
+                                    <label> <form="senha"> Senha </label>
+                                    <input type="password" id="senha" placeholder="**********" required 
+                                    name="senha">
+
+                                    <label for="mensagem"> Mensagem </label>
+                                    <textarea name="" id="mensagem" placeholder="Deixe o seu feedback aqui!"
+                                     cols="40" rows="10" maxlength="40"></textarea>
+                                     
+                                     <label for="newsletter"> Quero receber novidades por e-mail  </label>
+                                     <input type="checkbox" name="newsletter" id="newsletter">
+
+                                    <button> Enviar </button>
+
+                                </form>
+                            </section> 
+                            <section>
+                                <h2> Formularios agrupados </h2>
+
+                                <form action="">
+                                    <fieldset>
+                                        <legend> Dados pessoais </legend>
+
+                                        <label for="nome"> nome </label>
+                                        <input type="text" id="nome" name="nome" placeholder="Ex: ana silva " required>
+                                        <br>
+
+                                        <label for="email"> Email </label>
+                                        <input type="email" name="email" id="email" placeholder="adailexperiencia@.com"
+                                        required > <br>
+
+                                        <label for="senha"> Senha </label>
+                                        <input type="password" name="sena" id="senha" placeholder="*********" 
+                                        required> <br>
+
+                                        <label for="nascimento"> Data de Nascimento  </label>
+                                        <input type="date" name="nascimento" id="nascimento" required > <br>
+
+                                        <label for="idade"> idade </label>
+                                        <input type="munber" name="idade" id="idade" placeholder="18" required
+                                        min="18" max="120" > <br>
+                                        
+                                        <label for="telefone"> telefone </label>
+                                        <input type="tel" name="telefone" id="telefone" placeholder="(11)94476-4470" 
+                                        required> <br>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <legend> Enderenço </legend>
+
+                                        <label for="endereco"> Rua </label>
+                                        <input type="text" id="endereco" name="endereco" required placeholder="Ex: Rua ali"> <br>
+
+                                        <label for="numero"> Número </label>
+                                        <input type="number" name="numero" id="numero" min="1" placeholder="Ex:9" >
+                                        <br>
+
+                                        <label for="estado"> Estado  </label>
+                                        <select name="estado" id="estado">
+                                            <option value=""> Selecione um estado </option>
+                                            <option value="sp"> São Paulo </option>
+                                            <option value="rj"> Rio de Janeiro </option>
+                                            <option value="mg"> Minas Gerais </option>
+                                        </select>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <legend> Preferãncias </legend>
+
+                                        <label>
+                                            <input type="checkbox" name="interesses" value="tecnologia" >
+                                            tecnologia
+                                        </label>
+
+                                        <label>
+                                            <input type="checkbox" name="interesses" value="design">
+                                            Design
+                                        </label>
+
+                                        <label>
+                                            <input type="checkbox" name="interesses" value="programação">
+                                            programação
+                                        </label>
+
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <legend> Arquivos </legend>
+
+                                        <label for="foto"> Foto de perfil </label>
+                                        <input type="file" name="foto" id="foto">
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <legend> Temos e condições </legend>
+
+                                        <label for="checkbox" name="termo" required>
+                                            Li e aceito os temos de uso. 
+                                        </label>
+                                    </fieldset>
+
+                                    <button type="submit"> Criar cadastro </button>
+                                    <button type="reset"> Limpar formulariro </button>
+                                </form>
+                            </section>
+    </main>
+
+    <footer>
+        <p> &copy; 2026 - adail Edmar </p>
+    </footer>
+</body>
+</html>

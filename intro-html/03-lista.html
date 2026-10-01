@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Listas | HTML</title>
+</head>
+
+<body>
+    <h1>O que são listas no HTML?</h1>
+    <p> Uma lista é uma sequência de itens relacionados entre si. </p>
+    <p> No HTML, existem principalmente <strong> três tipos de listas </strong>: <em> Listas não ordenadas </em>, <em> listas ordenadas</em>, e <em> listas de descrição </em>.</p>
+    <hr>
+
+    <h2>Lista não ordenada (ul)</h2>
+    <p> uma lista não ordenada é usada quando a ordem dos elementos/lista não importa </p>
+
+<!-- ! ul/unordered list = lista não ordenada -->
+ <ul>
+    <!-- li/list items = itens da lista-->
+     <li>arroz</li>
+     <li>feijão</li>
+     <li>macarrão</li>
+     <li>carne</li>
+     <li>café</li>
+ </ul>
+
+ <h2>lista ordenada (ol)</h2>
+ <p>usamos uma lista ordenada quando os itens possuem uma sequencia, uma classificação ou uma prdem que precisa ser respeitada</p>
+
+ <!-- ol/ordered = lista ordenada -->
+<ol>
+    <li>ferver agua</li>
+    <li>colocar o cafe no filtro</li>
+    <li>despejar a agua calmamente</li>
+    <li>servir o café</li>
+</ol>
+
+
+<h2> Lista de descrição (dl) </h2>
+    <p> Usamos uma lista de descrição quando precisamos descrever algum termo. </p>
+
+    <p> Para criarmos essa lista, utilizamos três elementos: </p>
+    <ul>
+        <li> <strong> dl(description list) </strong>: Representa a lista de descrição. </li>
+        <li> <strong> dt(description term) </strong>: Representa o termo. </li>
+        <li> <strong> dd(data description) </strong>: Representa a descrição do termo. </li>
+    </ul>
+
+    <h3> Criando a lista de descrição </h3>
+    <dl>
+        <dt> HTML </dt>
+        <dd> Linguagem usada para estruturar página da web. </dd>
+
+        <dt> CSS </dt>
+        <dd> Linguagem usada para estilizar páginas da web. </dd>
+
+        <dt> JavaScript </dt>
+        <dd> Linguagem usada para adicionar interatividade as páginas da web. </dd>
+    </dl>
+
+    <hr>
+
+    <h2>explorando ainda mais sobre listas</h2>
+    <h3>listas aninhadas</h3>
+    <p>listas aninhadas são listas dentro de listas</p>
+
+    <ul>
+        <li>
+            <strong>frontEnd</strong>
+            <ul>
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+            </ul>           
+        </li>
+
+        <li>
+             <strong>backend</strong>
+             <ul>
+                <li>java</li>
+                <li>postgree</li>
+                <li>api</li>
+             </ul>
+        </li>
+    </ul>
+
+    <h3>formatando listas</h3>
+    
+    <ul type="square">
+        <li>luiz henrique</li>
+        <li>luiz henrique</li>
+        <li>luiz henrique</li>
+    </ul>
+
+     <ul type="A">
+        <li>luiz henrique</li>
+        <li>luiz henrique</li>
+        <li>luiz henrique</li>
+    </ul>
+
+
+</body>
+</html>
